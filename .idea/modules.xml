@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/elza-cast/elza-cast.iml" filepath="$PROJECT_DIR$/elza-cast/elza-cast.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/git.iml" filepath="$PROJECT_DIR$/.idea/git.iml" />
     </modules>
   </component>

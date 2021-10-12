@@ -8,30 +8,25 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.List;
-
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "tb_usuarios")
-public class Usuario {
+@Table(name = "tb_contato")
+public class Contato {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     @NotNull
-    private String usuario;
+    private String nome;
     @NotNull
-    @Column(unique = true)
     private String telefone;
-    @NotNull
-    private String senha;
 
-    @OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
-    @JsonIgnoreProperties("usuario")
-    private List<Contato> contato;
-
+    @ManyToOne
+    @JsonIgnoreProperties("contato")
+    private Usuario usuario;
 }
