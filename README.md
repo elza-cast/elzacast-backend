@@ -1,18 +1,18 @@
-###### USUARIO logar
+## USUARIO logar
 ######   POST -  https://elza-cast.herokuapp.com/usuarios/logar 
 ######     Body{
 ######              "telefone":"123-123",    
 ######            "senha":"123-123"
 ######           }
 ######
-###### USUARIO cadastrar
+## USUARIO cadastrar
 ######  POST - https://elza-cast.herokuapp.com/usuarios/cadastrar
 ######     Body{
 ######            "usuario":"joao",
 ######            "telefone":"123-123",
 ######            "senha":"123-123"
 ######             }
-###### CONTATO cadastrar
+## CONTATO cadastrar
 ######  POST - https://elza-cast.herokuapp.com/contato/cadastrar
 ######       Body{
 ######            "nome": "maria",
@@ -20,7 +20,7 @@
 ######             "usuario": {
 ######                          "id": 1    
 ######                         }
-###### CONTATO get
+## CONTATO get
 ######   GET - https://elza-cast.herokuapp.com/contato/{usuarioId}
 ######      RESPONSE: {
 ######                  "id": 1,
